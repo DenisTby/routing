@@ -1,0 +1,23 @@
+<nav  class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">UDICTI Routing</a>
+</nav>
+
+
+<div class="row">
+
+    <div class="dashboard col-md-4" >
+        <br>
+        <ul  class="list-group">
+           
+          <li class="list-group-item"><a [routerLink]="['/home', 'viewActivities']" routerLinkActive="active">View Activities</a></li>
+          <li class="list-group-item"><a [routerLink]="['/home', 1]" routerLinkActive="active">Manage Notification</a></li>
+          <li class="list-group-item"><a [routerLink]="['/home', 'profileEdit']" routerLinkActive="active">Profile Edit</a> </li>
+        </ul>
+      
+      </div>
+      
+      <div class="sidebar col-md-4">
+          <router-outlet></router-outlet>
+      </div>
+</div>
+
