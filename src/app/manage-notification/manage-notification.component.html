@@ -1,1 +1,8 @@
-<p>manage-notification works!</p>
+<form  #form='ngForm' (ngSubmit)= 'submit(form)'>
+    <div class="form-group">
+        <label for=""></label>
+        <input type="text" ngModel #username='ngModel' class="form-control" name="username"></div>
+
+        <button class="btn btn-primary">SEND</button>
+   
+</form>

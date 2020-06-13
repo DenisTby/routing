@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Form } from '@angular/forms';
 
 @Component({
   selector: 'app-manage-notification',
@@ -11,5 +12,10 @@ export class ManageNotificationComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  submit(f){
+    console.log(f.value)
+  }
+
 
 }
